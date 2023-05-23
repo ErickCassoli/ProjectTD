@@ -11,7 +11,7 @@ public class Game extends JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        System.out.println("Sim");
+        System.out.println("SIm");
     }
 
 }
