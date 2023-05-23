@@ -10,6 +10,8 @@ public class Game extends JFrame{
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        System.out.println("SIm");
     }
 
     public static void main(String[] arg){
