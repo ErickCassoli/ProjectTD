@@ -4,6 +4,7 @@ import java.awt.Graphics;
 
 public class Render {
     
+    private GameScreen gameScreen;
 
     public Render(GameScreen gameScreen) {
 
