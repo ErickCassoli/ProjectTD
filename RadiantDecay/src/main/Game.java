@@ -1,5 +1,10 @@
 package main;
 
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
 import inputs.KeyboardListener;
@@ -8,10 +13,13 @@ import inputs.MyMouseListener;
 public class Game extends JFrame {
 
     private GameScreen gameScreen;
+    private BufferedImage img;
     private MyMouseListener myMouseListener;
     private KeyboardListener keyboardListener;
 
     public Game() {
+
+        importImg();
 
         setSize(1024, 640);
         setVisible(true);
@@ -20,6 +28,17 @@ public class Game extends JFrame {
 
         gameScreen = new GameScreen();
         add(gameScreen);
+    }
+
+    private void importImg() {
+
+        InputStream is = getClass().getResourceAsStream("/sprinteatlas.png");
+    
+        try{
+            img = ImageIO.read(is);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     private void initInputs() {
