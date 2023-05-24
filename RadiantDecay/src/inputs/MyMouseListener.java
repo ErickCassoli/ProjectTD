@@ -22,7 +22,7 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
         if(e.getButton() == MouseEvent.BUTTON1)
         System.out.println("Cade Legenda?");
 
-        else if(e.getButton() == MouseEvent.BUTTON2)
+        else if(e.getButton() == MouseEvent.BUTTON3)
         System.out.println("Por que ele não tem legenda??");
     }
 

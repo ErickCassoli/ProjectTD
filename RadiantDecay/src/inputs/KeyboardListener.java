@@ -17,7 +17,7 @@ public class KeyboardListener implements KeyListener {
             System.out.println("Sexo ocasional?");
 
         else if(e.getKeyCode() == KeyEvent.VK_S)
-            System.out.println("Sexo Ocasional?");
+            System.out.println("Eu tenho cara de ator porno??");
     }
 
     @Override
