@@ -1,10 +1,5 @@
 package main;
 
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
 import inputs.KeyboardListener;
