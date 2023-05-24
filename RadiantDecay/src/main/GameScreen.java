@@ -12,7 +12,10 @@ public class GameScreen extends JPanel{
     public void paintConponent(Graphics g){
         super.paintComponent(g);
 
-        g.setColor(Color.RED);
-        g.drawRect(50, 50, 100, 100);
+        g.setColor(Color.red);
+
+        for(int x = 0; x < 20; x++){
+            
+        }
     }
 }
