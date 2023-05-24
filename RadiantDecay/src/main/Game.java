@@ -7,6 +7,7 @@ import inputs.MyMouseListener;
 
 public class Game extends JFrame{
 
+    private GameScreen gameScreen;
     private MyMouseListener myMouseListener;
     private KeyboardListener keyboardListener;
 
@@ -18,6 +19,8 @@ public class Game extends JFrame{
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        gameScreen = new GameScreen();
+        add(gameScreen);
     }
 
     public static void main(String[] arg){
