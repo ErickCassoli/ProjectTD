@@ -8,19 +8,21 @@ public class KeyboardListener implements KeyListener {
     @Override
     public void keyTyped(KeyEvent e) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'keyTyped'");
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'keyPressed'");
+        if(e.getKeyCode() == KeyEvent.VK_A)
+            System.out.println("Sexo ocasional?");
+
+        else if(e.getKeyCode() == KeyEvent.VK_S)
+            System.out.println("Sexo Ocasional?");
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'keyReleased'");
     }
 
 
