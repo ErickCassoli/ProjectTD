@@ -29,9 +29,9 @@ public class GameScreen extends JPanel {
     }
 
     private Color getRndColor() {
-        int r = random.nextInt(256);
-        int g = random.nextInt(256);
-        int b = random.nextInt(256);
+        int r = random.nextInt(255);
+        int g = random.nextInt(255);
+        int b = random.nextInt(255);
 
         return new Color(r, g, b);
     }
