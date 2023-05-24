@@ -13,13 +13,10 @@ import inputs.MyMouseListener;
 public class Game extends JFrame {
 
     private GameScreen gameScreen;
-    private BufferedImage img;
     private MyMouseListener myMouseListener;
     private KeyboardListener keyboardListener;
 
     public Game() {
-
-        importImg();
 
         setSize(1024, 640);
         setVisible(true);
@@ -28,17 +25,6 @@ public class Game extends JFrame {
 
         gameScreen = new GameScreen();
         add(gameScreen);
-    }
-
-    private void importImg() {
-
-        InputStream is = getClass().getResourceAsStream("/spriteatlas.png");
-    
-        try{
-            img = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
     }
 
     private void initInputs() {
