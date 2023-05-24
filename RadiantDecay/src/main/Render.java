@@ -3,7 +3,7 @@ package main;
 import java.awt.Graphics;
 
 public class Render {
-    
+
     private GameScreen gameScreen;
 
     public Render(GameScreen gameScreen) {
@@ -11,8 +11,8 @@ public class Render {
         this.gameScreen = gameScreen;
     }
 
-    public void render(Graphics g){
-        switch(GameStates.gameState){
+    public void render(Graphics g) {
+        switch (GameStates.gameState) {
 
             case MENU:
 
@@ -21,7 +21,7 @@ public class Render {
 
                 break;
             case SETTINGS:
-            
+
                 break;
         }
     }
