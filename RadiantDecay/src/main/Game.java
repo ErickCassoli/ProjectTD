@@ -17,6 +17,7 @@ public class Game extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
         gameScreen = new GameScreen();
         add(gameScreen);
     }

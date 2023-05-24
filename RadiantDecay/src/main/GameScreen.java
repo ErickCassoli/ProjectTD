@@ -15,18 +15,13 @@ public class GameScreen extends JPanel {
 
     }
 
-    public void paintConponent(Graphics g) {
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
         for (int y = 0; y < 20; y++) {
-
-            g.setColor(getRndColor());
-            g.fillRect(y * 32, 0, 32, 32);
-
-            for (int x = 0; x < 20; x++) {
-
+            for (int x = 0; x < 32; x++) {
                 g.setColor(getRndColor());
-                g.fillRect(x * 32, 0, 32, 32);
+                g.fillRect(x * 32, y * 32, 32, 32);
 
             }
         }
