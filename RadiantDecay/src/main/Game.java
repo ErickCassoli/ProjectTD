@@ -23,8 +23,21 @@ public class Game extends JFrame{
         add(gameScreen);
     }
 
+    private void initInputs() {
+    myMouseListener = new MyMouseListener();
+    keyboardListener = new KeyboardListener();
+
+    addMouseListener(myMouseListener);
+    addMouseMotionListener(myMouseListener);
+
+    addKeyListener(keyboardListener);
+
+    requestFocus();
+    }
+
     public static void main(String[] arg){
         Game game = new Game();
+        game.initInputs();
     }
 
 }
