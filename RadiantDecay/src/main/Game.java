@@ -32,7 +32,7 @@ public class Game extends JFrame {
 
     private void importImg() {
 
-        InputStream is = getClass().getResourceAsStream("/sprinteatlas.png");
+        InputStream is = getClass().getResourceAsStream("/spriteatlas.png");
     
         try{
             img = ImageIO.read(is);
