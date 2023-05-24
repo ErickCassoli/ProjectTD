@@ -2,9 +2,16 @@ package main;
 
 import javax.swing.JFrame;
 
+import inputs.KeyboardListener;
+import inputs.MyMouseListener;
+
 public class Game extends JFrame{
 
     private GameScreen gameScreen;
+    private MyMouseListener myMouseListener;
+    private KeyboardListener keyboardListener;
+
+
 
     public Game() {
 
@@ -19,4 +26,5 @@ public class Game extends JFrame{
     public static void main(String[] arg){
         Game game = new Game();
     }
+
 }
