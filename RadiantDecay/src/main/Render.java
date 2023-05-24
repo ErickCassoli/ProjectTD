@@ -23,7 +23,6 @@ public class Render {
             case SETTINGS:
             
                 break;
-
         }
     }
 }

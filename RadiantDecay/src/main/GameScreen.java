@@ -9,10 +9,11 @@ import javax.swing.JPanel;
 public class GameScreen extends JPanel {
 
     private Random random;
+    private Render render;
 
     public GameScreen() {
         random = new Random();
-
+        render = new Render(this);
     }
 
     public void paintComponent(Graphics g) {
