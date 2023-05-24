@@ -1,9 +1,7 @@
 package managers;
 
-    public Tile GRASS.WATER.ROAD;
+import objects.Tile;
 
 public class TileManager {
-    public TileManager() {
     
-    }
 }
